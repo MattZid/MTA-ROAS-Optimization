@@ -1,2 +1,5 @@
 # MTA-ROAS-Optimization
 Modelling script to define marketing channel dimisnihng return trends related to incremental spend.
+
+
+This code takes the latest 36 months of data from internal snowflake databases, specifically MTA attributed demand across all marketing channels. I prepare the data for curve fitting by conducting data checks and filtering outliers. Once the data is proeprly formatted and refined, I run curve fitting for each marketing channel. I specify a log function, however this can be updated to any type of diminishing return function. Parameters from the curve fit process are stored and used for internal projections. Visualizations are provided to supplement this analysis.
